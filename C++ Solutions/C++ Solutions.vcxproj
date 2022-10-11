@@ -139,7 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C++ Solutions.cpp" />
+    <ClCompile Include="CountLargestGroup.cpp" />
+    <ClCompile Include="NumberOfPairsOfInterchangableRectangles.cpp" />
+    <ClCompile Include="QueriesOnNumberOfPointsInsideACircle.cpp" />
+    <ClCompile Include="RLEIterator.cpp" />
+    <ClCompile Include="UniqueEmailAddresses.cpp" />
+    <ClCompile Include="UniquePathsIII.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
