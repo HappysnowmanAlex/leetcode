@@ -1,18 +1,20 @@
 #include <vector>
 
 class Solution
-{  
+{
 public:
     int ans = 0;
     int emptyCells = 1; // initialized to 1 cause starting cell
 
-    void dfs(std::vector<std::vector<int>>& grid, int x, int y, int visited)
+    void dfs(std::vector<std::vector<int>> &grid, int x, int y, int visited)
     {
-        if (x < 0 || x >= grid.size() || y < 0 || y >= grid[0].size() || grid[x][y] == -1) return;
+        if (x < 0 || x >= grid.size() || y < 0 || y >= grid[0].size() || grid[x][y] == -1)
+            return;
 
         if (grid[x][y] == 2)
         {
-            if (emptyCells == visited) ans++;
+            if (emptyCells == visited)
+                ans++;
             return;
         }
 
@@ -26,7 +28,7 @@ public:
         grid[x][y] = 0;
     }
 
-    int uniquePathsIII(std::vector<std::vector<int>>& grid)
+    int uniquePathsIII(std::vector<std::vector<int>> &grid)
     {
         int startX, startY;
         for (int i = 0; i < grid.size(); i++)
@@ -44,5 +46,9 @@ public:
                 }
             }
         }
+
+        dfs(grid, startX, startY, 0);
+
+        return ans;
     }
 };

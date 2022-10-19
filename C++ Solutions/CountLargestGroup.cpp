@@ -38,9 +38,13 @@ public:
             {
                 ans++;
             }
-
         }
 
         return ans;
     }
 };
+
+int main()
+{
+    return 0;
+}
