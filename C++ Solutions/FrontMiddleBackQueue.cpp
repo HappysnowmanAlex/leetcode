@@ -6,7 +6,6 @@ class FrontMiddleBackQueue
 {
 public:
     std::list<int> queue;
-    std::list<int>::iterator mid;
 
     FrontMiddleBackQueue() {}
 
