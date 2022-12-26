@@ -1,2 +1,2 @@
-# Leetcode
-My solutions to challenges on Leetcode
+# LeetCode Solutions
+My solutions to challenges on [LeetCode](https://leetcode.com/).
